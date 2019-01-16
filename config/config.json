@@ -1,0 +1,59 @@
+{
+   "root": {
+      "dev": "./src",
+      "dist": "./dist"
+   },
+   "html": {
+      "dev": "html",
+      "dist": "./",
+      "parts": "templates",
+      "run": true
+   },
+   "css": {
+      "dev": "public/sass",
+      "dist": "public/css",
+      "parts": "parts",
+      "extensions": "*.+(css|scss)",
+      "uncss": false
+   },
+   "js": {
+      "dev": "public/js",
+      "dist": "public/js",
+      "parts": "modules",
+      "extensions": [".json", ".js"]
+   },
+   "img": {
+      "dev": "public/image/**/",
+      "dist": "public/image",
+      "extensions": "*.+(jpg|jpeg|gif|png|svg)"
+   },
+   "svg": {
+      "dev": "public/image/svg",
+      "dist": "public/image"
+   },
+   "fonts": {
+      "dev": "public/fonts",
+      "dist": "public/fonts",
+      "extensions": "*.+(woff2|woff|eot|ttf|svg)"
+   },
+   "static": {
+      "dev": "public/static",
+      "dist": "public/static"
+   },
+   "deploy": {
+      "hostname": "",
+      "username": "",
+      "path": "/",
+      "password": ""
+   },
+   "browserSync": {
+    "port": 2333,
+    "proxy": {
+      "target": "",
+      "publicPath" : "",
+      "files": [
+        "../*.php"
+      ]
+    }
+   }
+}
