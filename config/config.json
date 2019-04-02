@@ -23,13 +23,13 @@
       "extensions": [".json", ".js"]
    },
    "img": {
-      "dev": "public/image/**/",
-      "dist": "public/image",
+      "dev": "public/images/**/",
+      "dist": "public/images",
       "extensions": "*.+(jpg|jpeg|gif|png|svg)"
    },
    "svg": {
-      "dev": "public/image/svg",
-      "dist": "public/image"
+      "dev": "public/images/svg",
+      "dist": "public/images"
    },
    "fonts": {
       "dev": "public/fonts",
@@ -37,8 +37,8 @@
       "extensions": "*.+(woff2|woff|eot|ttf|svg)"
    },
    "static": {
-      "dev": "public/static",
-      "dist": "public/static"
+      "dev": "public/lib",
+      "dist": "public/lib"
    },
    "deploy": {
       "hostname": "",

@@ -13,7 +13,8 @@ const plumber = require('gulp-plumber');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const uncss = require('gulp-uncss');
-
+// const postcss = require("gulp-postcss");
+// const px2rem = require("postcss-px2rem");
 const config = require('./config');
 const mode = require('./lib/mode');
 
@@ -35,9 +36,10 @@ const unCssIgnore = [
   '.collapsing',
 ];
 
-gulp.task('css', () =>
+gulp.task('css', () => {
+  // var processors = [px2rem({ remUnit: 75 })];
   gulp
-    .src(path.join(config.root.dev, config.css.dev, 'bundle.scss'))
+    .src(path.join(config.root.dev, config.css.dev, '3twork_v3.scss'))
     .pipe(gulpif(!mode.production, sourcemaps.init()))
     .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
     .pipe(sass({
@@ -72,6 +74,10 @@ gulp.task('css', () =>
         keepSpecialComments: 0,
       }),
     ))
+    // .pipe(postcss(processors))
     .pipe(gulpif(!mode.production, sourcemaps.write()))
     .pipe(gulp.dest(path.join(config.root.dist, config.css.dist)))
-    .pipe(reload({ stream: true })));
+    .pipe(reload({ stream: true }))
+})
+
+

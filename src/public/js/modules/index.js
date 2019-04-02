@@ -1,2 +1,1 @@
-require('./zepto.min.js')
-require('./sparrow.js')
+require('./v3.js')

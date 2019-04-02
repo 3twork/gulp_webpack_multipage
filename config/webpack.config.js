@@ -19,7 +19,7 @@ const webpackConfig = {
   },
   output: {
     path: JS_DIST,
-    filename: 'bundle.js',
+    filename: '3twork_v3.js',
     publicPath,
   },
   module: {

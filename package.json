@@ -1,18 +1,16 @@
 {
-  "name": "gulp-webpack-multipage",
+  "name": "3twork_front_v3",
   "version": "1.0.0",
-  "description": "gulp+webpack",
-  "main": "index.js",
+  "description": "基于 Gulp + Webpack 开发和构建 传统多页面静态站点的前端工程化方案，支持ie8+",
+  "main": ".eslintrc.js",
   "scripts": {
     "dev": "gulp",
     "build": "cross-env NODE_ENV=production gulp"
   },
-  "author": "1831553725@qq.com",
-  "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.18.13",
     "cross-env": "^5.1.1",
     "del": "^3.0.0",
@@ -30,6 +28,7 @@
     "gulp-imagemin": "^4.0.0",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^8.0.0",
     "gulp-prompt": "^1.0.0",
     "gulp-remember": "^1.0.0",
     "gulp-sass": "^3.1.0",
@@ -47,6 +46,7 @@
     "merge-stream": "^1.0.0",
     "minimatch": "^3.0.2",
     "path": "^0.12.7",
+    "postcss-px2rem": "^0.3.0",
     "require-dir": "^0.3.2",
     "rimraf": "^2.4.3",
     "run-sequence": "^2.2.0",
@@ -58,5 +58,11 @@
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "normalize-css": "^2.3.1"
-  }
+  },
+  "author": "1831553725@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3twork/gulp_webpack_mutipage/issues"
+  },
+  "homepage": "https://github.com/3twork/gulp_webpack_mutipage#readme"
 }
