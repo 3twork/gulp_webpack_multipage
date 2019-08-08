@@ -5,6 +5,7 @@
 const browserSync = require('browser-sync');
 const gulp = require('gulp');
 const webpack = require('webpack');
+const path = require ('path');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 
@@ -40,7 +41,7 @@ if (config.browserSync.proxy.target) {
 if (!mode.production) {
   browserSyncConfig.middleware = [
     webpackDevMiddleware(webpackCompiler, {
-      publicPath: webpackConfig.output.publicPath,
+      publicPath: path.resolve(webpackConfig.output.publicPath),
       noInfo: true,
       stats: {
         colors: true,

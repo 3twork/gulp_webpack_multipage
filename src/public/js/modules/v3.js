@@ -44,3 +44,4 @@ if($('body').find('.workshop-resume')){
   }
   moreText('#workshopResume')
 }
+console.log('test')
